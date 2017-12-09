@@ -109,7 +109,7 @@ header a {
 	display: flex;
 	width: 100%;
 }
-.information .main {
+.main {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
@@ -120,18 +120,18 @@ header a {
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
-.main .author {
+.author {
 	font-weight: bold;
 	color: #505050;
 }
-.information .side  {
+.side  {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
  	padding: 1rem 0 2rem 0;
  	border-left: 1px solid lightgrey; 
 }
-.side .news {
+ .news {
 	display: flex;
 	height: 90%;
 	padding: 1rem 0;
@@ -139,12 +139,12 @@ header a {
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey; 
 }
-.news .news-img {
+.news-img {
 	width: 35%;
 	height: auto;
 	padding: 0 1rem;
 }
-.news .news-title {
+.news-title {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -174,10 +174,10 @@ header a {
 	flex-direction: column;
 	align-items: center;
 }
-.courses .courses-title {
+.courses-title {
 	padding: 1rem 0;
 }
-.courses .box-wrapper {
+.box-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -205,4 +205,22 @@ header a {
 .box-content p {
 	color: grey;
 	line-height: 2rem;
+}
+
+/*Exhibit section*/
+
+.thesis {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.thesis-content {
+	display: flex;
+}
+.thesis-content .news {
+	border: none;
+	height: 25%;
+}
+.thesis-content .side {
+	border: none;
 }
