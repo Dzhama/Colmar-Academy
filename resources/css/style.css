@@ -13,20 +13,30 @@ html {
 h1 {
 	font-size: 3rem;
 	line-height: 4rem;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 h2 {
 	font-size: 2.25rem;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 h3 {
 	font-size: 1.8rem;
 	line-height: 2.6rem;
+	font-weight: bold;
+	margin-top:; 2rem;
+	margin-bottom: 2rem;
 }
 img {
 	height: 100%;
 	width: 100%;
 }
-/* Header*/
 
+
+/* Header*/
 header {
 	display: flex;
 	height: 4rem;
@@ -60,8 +70,8 @@ header a {
 	color: black;
 }
 
-/* Banner section*/ 
 
+/* Banner section*/ 
 .banner {
 	display: flex;
 	background-color: lightgrey;
@@ -92,9 +102,6 @@ header a {
 	text-decoration: none;
 	color: white;
 }
-
-
-
 
 
 /* News section */
@@ -131,7 +138,6 @@ header a {
 	margin: 0 0 1px 1px;
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey; 
-
 }
 .news .news-img {
 	width: 35%;
@@ -155,4 +161,48 @@ header a {
 }
 .readmore a {
 	text-decoration: none;
+}
+
+
+
+/*Coueses section */
+.courses {
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	padding: 0 4.5rem 2rem 4.5rem;
+	flex-direction: column;
+	align-items: center;
+}
+.courses .courses-title {
+	padding: 1rem 0;
+}
+.courses .box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box-wrapper .box {
+	display: flex;
+	width: 31.8%;
+	flex-direction: column;
+	margin-bottom: 2rem;
+
+}
+.box .box-img {
+	height: 50%;
+	width: 100%;
+}
+.box .box-content {
+	height: 40%;
+	background-color: white;
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+.box-content h3 {
+	margin-bottom: 1rem;
+}
+.box-content p {
+	color: grey;
+	line-height: 2rem;
 }
