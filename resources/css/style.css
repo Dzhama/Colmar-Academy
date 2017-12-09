@@ -213,6 +213,8 @@ header a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 .thesis-content {
 	display: flex;
@@ -223,4 +225,26 @@ header a {
 }
 .thesis-content .side {
 	border: none;
+}
+
+/*Footer section*/
+footer {
+	border-top: 1px solid lightgrey;
+	padding: 1rem 1.5rem;
+	margin: 0 2px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.terms {
+	display: flex;
+	flex-direction: row;
+	padding: 0 1rem;
+}
+.terms span {
+	margin: 0 1rem;
+}
+.terms a {
+	text-decoration: none;
+	color: grey;
 }
