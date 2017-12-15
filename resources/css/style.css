@@ -4,7 +4,7 @@ html {
 	color: #404040;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
 	html {
 		font-size: 12px;
 	}
@@ -27,7 +27,7 @@ h3 {
 	font-size: 1.8rem;
 	line-height: 2.6rem;
 	font-weight: bold;
-	margin-top:; 2rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 img {
@@ -41,6 +41,7 @@ header {
 	display: flex;
 	height: 4rem;
 	padding: 0 1.5rem;
+	font-size: 1.2rem;
 }
 header .logo {
 	display: flex;
@@ -49,7 +50,8 @@ header .logo {
 	line-height: 2rem;
 }
 header .colmar {
-	font-weight: bold;}
+	font-weight: bold;
+}
 header .academy {
 	color: grey;
 }
@@ -63,13 +65,19 @@ header .nav {
 }
 header li {
 	display: inline;
-	padding-left: 1rem;
+	padding-left: 0.5rem;
 }
 header a {
 	text-decoration: none;
 	color: black;
+	padding: 0.5rem;	
+	border-radius: 0.2rem;
 }
+header a:hover {
+	background-color: lightgrey;
+	transition: all 0.3s ease 150ms;
 
+}
 
 /* Banner section*/ 
 .banner {
@@ -98,9 +106,13 @@ header a {
 	padding: 1rem;
 	margin: 2rem 0 2rem 0;
 }
-.button a {
+.content a {
 	text-decoration: none;
 	color: white;
+}
+.button:hover {
+	background-color: #303030;
+	transition: all 0.2s ease 100ms;
 }
 
 
@@ -139,6 +151,10 @@ header a {
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey; 
 }
+.news:hover {
+	background-color: lightgrey;
+	transition: all 0.2s ease 100ms;
+}
 .news-img {
 	width: 35%;
 	height: auto;
@@ -162,7 +178,6 @@ header a {
 .readmore a {
 	text-decoration: none;
 }
-
 
 
 /*Coueses section */
@@ -195,7 +210,7 @@ header a {
 	width: 100%;
 }
 .box .box-content {
-	height: 40%;
+	height: 50%;
 	background-color: white;
 	padding: 1rem 1rem 1.5rem 1rem;
 }
