@@ -4,28 +4,18 @@ html {
 	color: #404040;
 }
 
-@media only screen and (max-width: 1100px) {
-	html {
-		font-size: 12px;
-	}
-}
-
 h1 {
 	font-size: 3rem;
 	line-height: 4rem;
-	font-weight: bold;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 h2 {
 	font-size: 2.25rem;
-	font-weight: bold;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 h3 {
 	font-size: 1.8rem;
 	line-height: 2.6rem;
+}
+h1, h2, h3 {
 	font-weight: bold;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -34,7 +24,6 @@ img {
 	height: 100%;
 	width: 100%;
 }
-
 
 /* Header*/
 header {
@@ -76,7 +65,6 @@ header a {
 header a:hover {
 	background-color: lightgrey;
 	transition: all 0.3s ease 150ms;
-
 }
 
 /* Banner section*/ 
@@ -95,11 +83,12 @@ header a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 35%;	
+	width: 40%;	
 }
 .content .button {
 	display: flex;
 	color: white;
+	width: 80%;
 	font-size: 1.5rem;
 	background-color: #404040;
 	justify-content: center;
@@ -115,6 +104,30 @@ header a:hover {
 	transition: all 0.2s ease 100ms;
 }
 
+/* style for screen less then 960px (for tablet)*/
+@media only screen and (max-width: 960px) {
+	h1,h2,h3 {
+		margin: 1rem;
+	}
+	.banner {
+		display: flex;
+		flex-direction: column;
+	}
+	.banner .banner-img {
+		width: 100%;
+		padding: 0px;
+		height: 480px;
+	}
+	.banner .content {
+		width: 100%;
+		align-items: center;
+	}
+	.content a {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
 
 /* News section */
 .information {
@@ -179,6 +192,14 @@ header a:hover {
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 960px) {
+	.information .main {
+		display: none;
+	}
+	.side {
+		width: 100%;
+	}
+}
 
 /*Coueses section */
 .courses {
@@ -197,13 +218,17 @@ header a:hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
 .box-wrapper .box {
 	display: flex;
 	width: 31.8%;
 	flex-direction: column;
 	margin-bottom: 2rem;
+	border: 2px solid lightgrey;
 
+}
+.box:hover {
+	border: 2px solid black;
+	transition: all 0.2s ease 100ms;
 }
 .box .box-img {
 	height: 50%;
@@ -222,6 +247,12 @@ header a:hover {
 	line-height: 2rem;
 }
 
+@media only screen and (max-width: 960px) {
+	.box-wrapper .box {
+		width: 49%;
+		margin-bottom: 0.5rem;
+	}
+}
 /*Exhibit section*/
 
 .thesis {
@@ -240,6 +271,19 @@ header a:hover {
 }
 .thesis-content .side {
 	border: none;
+}
+
+@media only screen and (max-width: 960px) {
+	.thesis-content {
+		flex-direction: column;
+	}
+	.thesis-content .main {
+		width: 100%;
+		padding: 0px;
+	}
+	.main .main-content {
+		display: none;
+	}
 }
 
 /*Footer section*/
