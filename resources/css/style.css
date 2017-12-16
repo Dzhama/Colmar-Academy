@@ -2,6 +2,12 @@ html {
 	font-size: 16px;
 	font-family: Roboto, sans-serif;
 	color: #404040;
+	overflow-x: hidden;
+}
+@media only screen and (max-width: 760px) { 
+ 	html {
+ 		font-size: 14px;
+ 	}
 }
 
 h1 {
@@ -48,6 +54,9 @@ header img {
 	height: 2rem;
 	width: 2rem;
 }
+header .logo-mobile {
+	display: none;
+}
 header .nav {
 	display: flex;
 	align-items: center;
@@ -66,6 +75,23 @@ header a:hover {
 	background-color: lightgrey;
 	transition: all 0.3s ease 150ms;
 }
+
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) {
+	  header .logo {
+	  	display: none;
+	}
+	  header .nav {
+	    display: none;
+	}
+	  header .logo-mobile {
+	    display: initial;
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+	    flex-grow: 1;
+	}
+  }
 
 /* Banner section*/ 
 .banner {
@@ -116,7 +142,7 @@ header a:hover {
 	.banner .banner-img {
 		width: 100%;
 		padding: 0px;
-		height: 480px;
+		height: initial;
 	}
 	.banner .content {
 		width: 100%;
@@ -127,6 +153,13 @@ header a:hover {
 		justify-content: center;
 		width: 100%;
 	}
+}
+
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) { 
+ 	.content .button {
+ 		background-color: #606060;
+ 	}
 }
 
 /* News section */
@@ -192,14 +225,38 @@ header a:hover {
 	text-decoration: none;
 }
 
+/* style for screen less then 960px (for tablet)*/
 @media only screen and (max-width: 960px) {
 	.information .main {
 		display: none;
 	}
-	.side {
+	.information .side {
 		width: 100%;
 	}
 }
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) { 
+ 	.information .side {
+ 		padding: 1.5rem;
+ 		border: none;
+ 	}
+ 	.information .news {
+ 		flex-direction: column;
+ 		border: none;
+ 		padding: 0;
+ 		height: auto;
+ 	}
+ 	.information .news-img {
+ 		width: 100%;
+ 		height: 200px;
+ 		padding: 0;
+ 	}
+ 	.information .news-title {
+ 		width: 100%;
+ 		padding: 3rem 1rem;
+ 	}
+}
+
 
 /*Coueses section */
 .courses {
@@ -212,6 +269,9 @@ header a:hover {
 }
 .courses-title {
 	padding: 1rem 0;
+}
+.courses-mobile {
+	display: none;
 }
 .box-wrapper {
 	display: flex;
@@ -247,11 +307,46 @@ header a:hover {
 	line-height: 2rem;
 }
 
+/* style for screen less then 960px (for tablet)*/
 @media only screen and (max-width: 960px) {
 	.box-wrapper .box {
 		width: 49%;
 		margin-bottom: 0.5rem;
 	}
+}
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) { 
+	.courses {
+		background-color: white;
+		border-top: 1px solid lightgrey;
+		padding: 0;
+		text-align: center;
+	}
+	.courses-title {
+		width: 100%;
+		color: #505050;
+	}
+	.box-wrapper {
+		display: none;
+	}
+	.courses-mobile {
+		display: initial;
+		display: flex;
+		flex-direction: column;
+	}
+	.courses-mobile {
+		text-align: left;
+		width: 95%;
+		font-weight: 700;
+		font-size: 1.3rem;
+	}
+	.courses-mobile span {
+		margin-bottom: 0.8rem;
+		padding: 1.4rem;
+		background-color: lightgrey;
+		color: #606060;
+	}
+
 }
 /*Exhibit section*/
 
@@ -273,6 +368,7 @@ header a:hover {
 	border: none;
 }
 
+/* style for screen less then 960px (for tablet)*/
 @media only screen and (max-width: 960px) {
 	.thesis-content {
 		flex-direction: column;
@@ -285,7 +381,12 @@ header a:hover {
 		display: none;
 	}
 }
-
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) { 
+ 	.thesis-content .side {
+ 		display: none;
+ 	}
+}
 /*Footer section*/
 footer {
 	border-top: 1px solid lightgrey;
@@ -294,6 +395,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 .terms {
 	display: flex;
@@ -307,3 +409,15 @@ footer {
 	text-decoration: none;
 	color: grey;
 }
+/* style for screen less then 760px (for phone)*/
+@media only screen and (max-width: 760px) { 
+ 	footer {
+ 		font-size: 0.8rem;
+ 	}
+ 	.terms {
+ 		padding: 0;
+ 	}
+  	.terms span {
+ 		margin: 0.3rem;
+ 	}
+ }
